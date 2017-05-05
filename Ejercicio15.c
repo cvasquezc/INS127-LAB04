@@ -1,3 +1,4 @@
+//Lab 04 -  Ejercicio 15 - Programa para crear una nueva lista ordenada a partir de 2 listas, ingresando valores intercalados
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Nodo{
@@ -85,11 +86,6 @@ int main(int argc, char const *argv[])
 	nodo *ptrA=listaMainA->ini;
 	nodo *ptrB=listaMainB->ini;
 	listaMainC=merge(listaMainA,listaMainB,ptrA,ptrB);
-
-
-
-
-	printf("\nPrograma para crear una nueva lista ordenada a partir de 2 listas, ingresando valores intercalados");
 	printf("\nLista 1");
 	recorrerLista(listaMainA);
 	printf("\nLista 2");
