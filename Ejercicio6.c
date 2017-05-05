@@ -1,3 +1,4 @@
+//Lab 6 -  Ejercicio 6 - Programa para calcular la ocurrencia de una variable en una lista
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Nodo{
@@ -16,7 +17,7 @@ lista *crearLista(){
 		newlista->fin=NULL;
 		newlista->tam=0;
 	}else{
-		printf("\nError, memoria no asignada");
+		printf("Error, memoria no asignada \n");
 	}
 	return newlista;
 	free(newlista);
@@ -38,7 +39,7 @@ void agregarNodo(lista *listaA,int num){
 void recorrerLista(lista *listaR){
 	nodo *aux;
 	aux=listaR->ini;
-	printf("\nLa lista contiene los siguientes elementos");
+	printf("La lista contiene los siguientes elementos \n");
 	while(aux!=NULL){
 		printf("\n%d",aux->valor);
 		aux=aux->sgte;
@@ -64,19 +65,18 @@ int main(int argc, char const *argv[])
 	int num;
 	listaMain=crearLista();
 	agregarNodo(listaMain,1);
+	agregarNodo(listaMain,1);
+	agregarNodo(listaMain,1);
+	agregarNodo(listaMain,2);
 	agregarNodo(listaMain,2);
 	agregarNodo(listaMain,3);
-	agregarNodo(listaMain,2);
-	agregarNodo(listaMain,2);
 	agregarNodo(listaMain,3);
 	agregarNodo(listaMain,3);
-	agregarNodo(listaMain,3);
-	printf("\nPrograma para calcular la ocurrencia de una variable en una lista");
 	recorrerLista(listaMain);
-	printf("\nAhora ingrese una numero para calcular cuantas veces se repite en la lista: ");
+	printf(" Ingresar  numero para calcular cuantas veces se repite en la lista: ");
 	scanf("%d",&num);
 	nodo *ptr=listaMain->ini;
 	int cantidad=calcularOcurrencia(listaMain,num,ptr);
-	printf("\nLa cantidad de veces que se repite la variable %d es de: %d",num,cantidad);
+	printf("La cantidad de veces que se repite la variable %d es de: %d \n",num,cantidad);
 	return 0;
 }
