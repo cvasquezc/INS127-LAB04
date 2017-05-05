@@ -1,3 +1,4 @@
+//Lab 04 - Ejercicio 16 - Programa para invertir una lista
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Nodo{
@@ -85,7 +86,6 @@ int main(int argc, char const *argv[])
 	agregarNodo(listaMain,3);
 	agregarNodo(listaMain,4);
 	agregarNodo(listaMain,5);
-	printf("\nPrograma para invertir una lista");
 	nodo *ptr=listaMain->ini;
 	listarLista(listaMain,ptr);
 	listaInvertida=invertirLista(listaMain);
