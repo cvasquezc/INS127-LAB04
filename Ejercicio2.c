@@ -1,4 +1,4 @@
-// Lab 2 - Ejercicio 2 - Programa para multiplicar dos numeros ocupando sumas
+// Lab 4 - Ejercicio 2 - Programa para multiplicar dos numeros ocupando sumas
 
 #include <stdio.h>
 
